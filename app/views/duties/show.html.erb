@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="small-10">
+    <div class="row">
+      <div class="small-2 columns">Name:</div>
+      <div class="small-10 columns"><%= @duty.name %></div>
+    </div>
+  </div>
+  <div class="small-10">
+    <div class="row">
+      <div class="small-2 columns">Players:</div>
+      <div class="small-10 columns"><%= @duty.players %></div>
+    </div>
+  </div>
+  <div class="small-10">
+    <div class="row">
+      <div class="small-2 columns">Level:</div>
+      <div class="small-10 columns"><%= @duty.level %></div>
+    </div>
+  </div>
+  <div class="small-10">
+    <div class="row">
+      <div class="small-2 columns">Time limit:</div>
+      <div class="small-10 columns"><%= @duty.time_limit %></div>
+    </div>
+  </div>
+  <div class="small-10">
+    <div class="row">
+      <div class="small-2 columns">Category:</div>
+      <div class="small-10 columns"><%= @duty.category %></div>
+    </div>
+  </div>
+  <div class="small-10">
+    <div class="row">
+      <div class="small-2 columns">Sync level:</div>
+      <div class="small-10 columns"><%= @duty.sync_level %></div>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_duty_path(@duty) %> |
+<%= link_to 'Back', duties_path %>

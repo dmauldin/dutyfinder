@@ -1,0 +1,57 @@
+<%= form_for(@duty) do |f| %>
+  <% if @duty.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@duty.errors.count, "error") %> prohibited this duty from being saved:</h2>
+
+      <ul>
+      <% @duty.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="small-10">
+      <div class="row">
+        <div class="small-2 columns"><%= f.label :name %></div>
+        <div class="small-10 columns"><%= f.text_field :name %></div>
+      </div>
+    </div>
+    <div class="small-10">
+      <div class="row">
+        <div class="small-2 columns"><%= f.label :players %></div>
+        <div class="small-10 columns"><%= f.number_field :players %></div>
+      </div>
+    </div>
+    <div class="small-10">
+      <div class="row">
+        <div class="small-2 columns"><%= f.label :level %></div>
+        <div class="small-10 columns"><%= f.number_field :level %></div>
+      </div>
+    </div>
+    <div class="small-10">
+      <div class="row">
+        <div class="small-2 columns"><%= f.label :time_limit %></div>
+        <div class="small-10 columns"><%= f.number_field :time_limit %></div>
+      </div>
+    </div>
+    <div class="small-10">
+      <div class="row">
+        <div class="small-2 columns"><%= f.label :category %></div>
+        <div class="small-10 columns"><%= f.text_field :category %></div>
+      </div>
+    </div>
+    <div class="small-10">
+      <div class="row">
+        <div class="small-2 columns"><%= f.label :sync_level %></div>
+        <div class="small-10 columns"><%= f.number_field :sync_level %></div>
+      </div>
+    </div>
+    <div class="small-10">
+      <div class="row">
+        <div class="small-10 small-offset-2 columns"><%= f.submit class: 'button' %></div>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Duty.create name: 'Sastasha', players: 4, level: 15, time_limit: 90, sync_level: 18
+Duty.create name: 'Amdapor Keep', players: 4, level: 50, time_limit: 90, sync_level: 50
