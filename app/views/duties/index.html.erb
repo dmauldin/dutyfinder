@@ -6,8 +6,9 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Players</th>
-      <th>Level</th>
+      <th>Party Size</th>
+      <th>Min Level</th>
+      <th>Min Item Level</th>
       <th>Time limit</th>
       <th>Category</th>
       <th>Sync level</th>
@@ -19,8 +20,9 @@
     <% @duties.each do |duty| %>
       <tr>
         <td><%= duty.name %></td>
-        <td><%= duty.players %></td>
-        <td><%= duty.level %></td>
+        <td><%= duty.party_size %></td>
+        <td><%= duty.min_level %></td>
+        <td><%= duty.min_item_level %></td>
         <td><%= duty.time_limit %></td>
         <td><%= duty.category %></td>
         <td><%= duty.sync_level %></td>

@@ -1,17 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  players: 1
-  level: 1
-  time_limit: 1
-  category: MyString
-  sync_level: 1
+  category: MyText
+  name: MyText
+  href: MyText
+  min_level: MyString
+  min_item_level: MyString
+  sync_level: MyString
+  time_limit: MyString
+  party_size: MyString
+  alliance_size: MyString
 
 two:
-  name: MyString
-  players: 1
-  level: 1
-  time_limit: 1
-  category: MyString
-  sync_level: 1
+  category: MyText
+  name: MyText
+  href: MyText
+  min_level: MyString
+  min_item_level: MyString
+  sync_level: MyString
+  time_limit: MyString
+  party_size: MyString
+  alliance_size: MyString

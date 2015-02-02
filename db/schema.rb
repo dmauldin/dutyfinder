@@ -11,17 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150201025058) do
+ActiveRecord::Schema.define(version: 20150202063103) do
 
   create_table "duties", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "players"
-    t.integer  "level"
-    t.integer  "time_limit"
     t.string   "category"
+    t.string   "name"
+    t.string   "href"
+    t.integer  "min_level"
+    t.integer  "min_item_level"
     t.integer  "sync_level"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "time_limit"
+    t.integer  "party_size"
+    t.integer  "alliance_size"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
 end

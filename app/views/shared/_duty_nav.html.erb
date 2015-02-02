@@ -5,7 +5,7 @@
       <div id="duty_nav_<%= category %>" class="content">
         <ul>
           <% @nav_duties[category].each do |duty| %>
-            <li><%= link_to "[#{duty.level}] #{duty.name}", duty %></li>
+            <li><%= link_to "[#{duty.min_level}] #{duty.name}", duty %></li>
           <% end %>
         </ul>
       </div>
