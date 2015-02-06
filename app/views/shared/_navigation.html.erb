@@ -11,19 +11,19 @@
 
   <section class="top-bar-section">
     <ul class="right">
-      <li class="hide-for-medium"><a href="#">Dungeons</a></li>
-      <li class="hide-for-medium"><a href="#">Raids</a></li>
-      <li class="hide-for-medium"><a href="#">Guildhests</a></li>
-      <li class="hide-for-medium"><a href="#">Trials</a></li>
-      <li class="hide-for-medium"><a href="#">PvP</a></li>
+      <li class="hide-for-medium"><%= link_to 'Dungeons', duties_path(category: 'Dungeons') %></li>
+      <li class="hide-for-medium"><%= link_to 'Raids', duties_path(category: 'Raids') %></li>
+      <li class="hide-for-medium"><%= link_to 'Guildhests', duties_path(category: 'Guildhests') %></li>
+      <li class="hide-for-medium"><%= link_to 'Trials', duties_path(category: 'Trials') %></li>
+      <li class="hide-for-medium"><%= link_to 'PvP', duties_path(category: 'PvP') %></li>
       <li class="has-dropdown show-for-medium">
         <a href="#">Duty Types</a>
         <ul class="dropdown">
-          <li><a href="#">Dungeons</a></li>
-          <li><a href="#">Raids</a></li>
-          <li><a href="#">Guildhests</a></li>
-          <li><a href="#">Trials</a></li>
-          <li><a href="#">PvP</a></li>
+          <li><%= link_to 'Dungeons', duties_path(category: 'Dungeons') %></li>
+          <li><%= link_to 'Raids', duties_path(category: 'Raids') %></li>
+          <li><%= link_to 'Guildhests', duties_path(category: 'Guildhests') %></li>
+          <li><%= link_to 'Trials', duties_path(category: 'Trials') %></li>
+          <li><%= link_to 'PvP', duties_path(category: 'PvP') %></li>
         </ul>
       </li>
       <li class="has-form">

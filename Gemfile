@@ -46,3 +46,4 @@ end
 
 gem 'foundation-rails'
 gem 'upton'
+gem 'haml-rails'

@@ -1,0 +1,28 @@
+%p#notice= notice
+
+%table
+  %tbody
+    %tr
+      %th Name
+      %td= @duty.name
+    %tr
+      %th Party Size
+      %td= @duty.party_size
+    %tr
+      %th Minimum Level
+      %td= @duty.min_level
+    %tr
+      %th Minimum Item Level
+      %td= @duty.min_item_level
+    %tr
+      %th Time Limit
+      %td= @duty.time_limit
+    %tr
+      %th Category
+      %td= @duty.category
+    %tr
+      %th Sync Level
+      %td= @duty.sync_level
+
+-# <%#= link_to 'Edit', edit_duty_path(@duty) %> |
+-# <%#= link_to 'Back', duties_path %>

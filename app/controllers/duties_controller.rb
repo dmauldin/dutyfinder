@@ -4,7 +4,7 @@ class DutiesController < ApplicationController
   # GET /duties
   # GET /duties.json
   def index
-    @duties = Duty.all
+    @duties = Duty.where(category: params[:category])
   end
 
   # GET /duties/1
@@ -69,6 +69,6 @@ class DutiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def duty_params
-      params.require(:duty).permit(:name, :players, :level, :time_limit, :category, :sync_level)
+      params.require(:duty).permit(:name, :party_size, :min_level, :min_item_level, :time_limit, :category, :sync_level)
     end
 end
